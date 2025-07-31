@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Student",
+  "type": "object",
+  "properties": {
+    "id":   { "type": "integer" },
+    "fio": 	{ "type": "string" }
+  },
+  "required": ["id", "fio"]
+}

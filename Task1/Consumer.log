@@ -1,0 +1,136 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.0)
+
+2025-07-31T16:32:54.937+03:00  INFO 7852 --- [demo] [           main] com.example.demo.SpringBootApplication   : Starting SpringBootApplication using Java 18.0.2.1 with PID 7852 (D:\Denis\Kafka\Lesson6\my_practic_kafka_yandexcloud\Task1\kafka_spring_consumer\target\classes started by admin in D:\Denis\Kafka\Lesson6\my_practic_kafka_yandexcloud\Task1\kafka_spring_consumer)
+2025-07-31T16:32:54.938+03:00  INFO 7852 --- [demo] [           main] com.example.demo.SpringBootApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-07-31T16:32:55.203+03:00  INFO 7852 --- [demo] [           main] com.example.demo.SpringBootApplication   : Started SpringBootApplication in 0.491 seconds (process running for 0.642)
+2025-07-31T16:32:55.218+03:00  INFO 7852 --- [demo] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [rc1a-visrq76m42f7rb7b.mdb.yandexcloud.net:9091, rc1b-4p80535qu7gnnitk.mdb.yandexcloud.net:9091, rc1d-q44jt83fl6nri71p.mdb.yandexcloud.net:9091]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-consumer-group-1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-group-1
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = SCRAM-SHA-512
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = 
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = kafka-creds/kafka.truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-07-31T16:32:55.236+03:00  INFO 7852 --- [demo] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-07-31T16:32:55.294+03:00  INFO 7852 --- [demo] [           main] o.a.k.c.s.authenticator.AbstractLogin    : Successfully logged in.
+2025-07-31T16:32:55.451+03:00  INFO 7852 --- [demo] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.0
+2025-07-31T16:32:55.451+03:00  INFO 7852 --- [demo] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 84caaa6e9da06435
+2025-07-31T16:32:55.451+03:00  INFO 7852 --- [demo] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1753968775450
+2025-07-31T16:32:55.452+03:00  INFO 7852 --- [demo] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Subscribed to topic(s): mytopic
+2025-07-31T16:33:03.666+03:00  INFO 7852 --- [demo] [   scheduling-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Cluster ID: zW7gGyBcTY611KSwElSxQA
+2025-07-31T16:33:03.666+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Discovered group coordinator rc1b-4p80535qu7gnnitk.mdb.yandexcloud.net:9091 (id: 2147483645 rack: null)
+2025-07-31T16:33:03.669+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] (Re-)joining group
+2025-07-31T16:33:09.985+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Request joining group due to: need to re-join with the given member-id: consumer-consumer-group-1-1-09c43c84-1e6c-438b-9175-12f34a10bc36
+2025-07-31T16:33:09.985+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] (Re-)joining group
+2025-07-31T16:33:12.069+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Successfully joined group with generation Generation{generationId=3, memberId='consumer-consumer-group-1-1-09c43c84-1e6c-438b-9175-12f34a10bc36', protocol='range'}
+2025-07-31T16:33:12.072+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Finished assignment for group at generation 3: {consumer-consumer-group-1-1-09c43c84-1e6c-438b-9175-12f34a10bc36=Assignment(partitions=[mytopic-0, mytopic-1, mytopic-2])}
+2025-07-31T16:33:12.123+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Successfully synced group in generation Generation{generationId=3, memberId='consumer-consumer-group-1-1-09c43c84-1e6c-438b-9175-12f34a10bc36', protocol='range'}
+2025-07-31T16:33:12.123+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Notifying assignor about the new Assignment(partitions=[mytopic-0, mytopic-1, mytopic-2])
+2025-07-31T16:33:12.124+03:00  INFO 7852 --- [demo] [   scheduling-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-consumer-group-1-1, groupId=consumer-group-1] Adding newly assigned partitions: mytopic-0, mytopic-1, mytopic-2
+2025-07-31T16:33:12.168+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition mytopic-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional[5], currentLeader=LeaderAndEpoch{leader=Optional[rc1a-visrq76m42f7rb7b.mdb.yandexcloud.net:9091 (id: 1 rack: ru-central1-a)], epoch=5}}
+2025-07-31T16:33:12.168+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition mytopic-2 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional[2], currentLeader=LeaderAndEpoch{leader=Optional[rc1d-q44jt83fl6nri71p.mdb.yandexcloud.net:9091 (id: 3 rack: ru-central1-d)], epoch=2}}
+2025-07-31T16:33:12.168+03:00  INFO 7852 --- [demo] [   scheduling-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition mytopic-1 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional[4], currentLeader=LeaderAndEpoch{leader=Optional[rc1b-4p80535qu7gnnitk.mdb.yandexcloud.net:9091 (id: 2 rack: ru-central1-b)], epoch=4}}
+2025-07-31T16:33:14.278+03:00  INFO 7852 --- [demo] [   scheduling-1] com.example.demo.service.KafkaConsumer   : Received message to topic 'mytopic': { "id": 3, "fio":"Иванов Иван Иванович 3" }
+2025-07-31T16:33:16.283+03:00  INFO 7852 --- [demo] [   scheduling-1] com.example.demo.service.KafkaConsumer   : Received message to topic 'mytopic': { "id": 2, "fio":"Иванов Иван Иванович 2" }
+2025-07-31T16:33:16.283+03:00  INFO 7852 --- [demo] [   scheduling-1] com.example.demo.service.KafkaConsumer   : Received message to topic 'mytopic': { "id": 4, "fio":"Иванов Иван Иванович 4" }
+2025-07-31T16:33:16.283+03:00  INFO 7852 --- [demo] [   scheduling-1] com.example.demo.service.KafkaConsumer   : Received message to topic 'mytopic': { "id": 5, "fio":"Иванов Иван Иванович 5" }
+2025-07-31T16:33:16.283+03:00  INFO 7852 --- [demo] [   scheduling-1] com.example.demo.service.KafkaConsumer   : Received message to topic 'mytopic': { "id": 1, "fio":"Иванов Иван Иванович 1" }
