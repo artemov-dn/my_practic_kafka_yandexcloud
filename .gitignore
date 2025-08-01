@@ -1,0 +1,5 @@
+/kafka_spring_producer/.idea/
+/kafka_spring_consumer/.idea/
+/kafka_spring_producer/target/
+/kafka_spring_consumer/target/
+/.idea/
